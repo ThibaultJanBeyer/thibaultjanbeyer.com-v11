@@ -1,0 +1,23 @@
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  margin: 100px auto;
+}
+
+.welcome-info {
+  margin-bottom: 40px;
+}
+
+.welcome-info__title {
+  letter-spacing: 0.5px;
+  text-indent: -5px;
+  margin: 0 0 30px;
+  text-shadow: 1px 1px 0 #f6f6f6, 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-links__link {
+  margin: 15px;
+}

@@ -1,0 +1,19 @@
+<div class="welcome-links">
+  {% for link in welcome.links %}
+    {% set _name = 'internal' if link.internal else 'external' %}
+    {% set _nameLink = 'internal-link' if link.internal else 'external-link' %}
+    <a href="{{ link.href }}" class="metalink welcome-links__link">
+      <span class="sr-only">
+        {{ common['jump-down'] }}
+      </span>
+      {{ link.title }}
+      <svg xmlns="//www.w3.org/2000/svg" role="img" 
+        class="{{ _name }}-link"
+        aria-labelledby="title_{{ _name }}_welcome-links_{{ loop.index }}  desc_{{ _name }}_welcome-links_{{ loop.index }}">
+        <title id="title_{{ _name }}_welcome-links_{{ loop.index }}">{{ common[_nameLink].title }}</title>
+        <desc id="desc_{{ _name }}_welcome-links_{{ loop.index }}">{{ common[_nameLink].desc }}</desc>
+        <use role="presentation" xlink:href="assets/svg/sprite.svg#{{_name}}-link"></use>
+      </svg>
+    </a>
+  {% endfor %}
+</div>

@@ -1,0 +1,5 @@
+<div class="about-text">
+  {% for paragraph in about.text %}
+    <p class="about-text__text copy">{{ paragraph | safe }}</p>
+  {% endfor %}
+</div>

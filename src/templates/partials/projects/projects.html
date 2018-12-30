@@ -1,0 +1,10 @@
+<section id="projects" class="section projects" role="region" aria-label="Work I do in my free time">
+  <h2 class="h2 section__title projects__title copy">
+    {{ projects.title }}
+  </h2>
+  <div class="section__container projects__container">
+    {% for project in projects.all %}<div class="section-{{ project.side }} section-card projects-card projects-card__{{ project.title | lower }}">
+      <p class="section-card__inner copy">{{ project.title }}</p>
+    </div>{% endfor %}
+  </div>
+</section>
