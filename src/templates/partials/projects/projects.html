@@ -3,8 +3,16 @@
     {{ projects.title }}
   </h2>
   <div class="section__container projects__container">
-    {% for project in projects.all %}<div class="section-{{ project.side }} section-card projects-card projects-card__{{ project.title | lower }}">
-      <p class="section-card__inner copy">{{ project.title }}</p>
-    </div>{% endfor %}
+    {% for project in projects.all %}
+      {% if project.title === 'Accessibility' %}
+        {% include "partials/projects/projects-accessibility.html" %}
+      {% else %}
+        <div class="section-{{ project.side }} section-card projects-card projects-card__{{ project.title | lower }}">
+          <div class="section-card__inner">
+            <h3 class="h2 copy">{{ project.title }}</h3>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
 </section>

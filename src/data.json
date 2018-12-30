@@ -44,23 +44,27 @@
     "all": [
       {
         "title": "DragSelect",
-        "side": "left"
+        "side": "half"
       },
       {
         "title": "DragNDrop",
-        "side": "right"
+        "side": "half"
+      },
+      {
+        "title": "Accessibility",
+        "side": "full"
+      },
+      {
+        "title": "Webcomponents",
+        "side": "half"
+      },
+      {
+        "title": "Psychedelics",
+        "side": "half"
       },
       {
         "title": "Blog",
         "side": "full"
-      },
-      {
-        "title": "DragSelect",
-        "side": "left"
-      },
-      {
-        "title": "DragNDrop",
-        "side": "right"
       }
     ]
   },
