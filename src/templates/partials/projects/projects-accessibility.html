@@ -1,12 +1,21 @@
 <div class="section-full section-card projects-card projects-accessibility">
-  <div class="section-card__inner">
-    <h3 class="h2 copy">{{ project.title }}</h3>
-    <div class="projects-accessibility__objects">
+  <a href="https://learn-accessibility.org/" class="section-card__inner section-card__link">
+    <div class="section-card__award up">
+      <span>3x</span> <i class="fas fa-award"></i>
+    </div>
+    <div class="projects-accessibility__objects contract">
       {% for i in range(0, 10) %}
         <div class="projects-accessibility__object circle" style="transform: rotate(20deg) translate3d({{ range(0, 4000) | random / 100 }}%, {{ range(0, 1000) | random / 100 }}%, 0px);"></div>
         <div class="projects-accessibility__object square" style="transform: translate3d({{ range(0, 4000) | random / 100 }}%, {{ range(0, 1000) | random / 100 }}%, 0px);"></div>
         <div class="projects-accessibility__object diamond" style="transform: rotate(45deg) translate3d({{ range(0, 4000) | random / 100 }}%, {{ range(0, 1000) | random / 100 }}%, 0px);"></div>
       {% endfor %}
     </div>
-  </div>
+    <div class="section-card__container">
+      <h3 class="section-card__title h2 copy up">{{ project.title }}</h3>
+      <div class="section-card__bar expand"></div>
+      <div class="down">
+        As I could not find any satisfying documentation on Accessibility I wrote the probably most comprehensible one. This was my studies final thesis.
+      </div>
+    </div>
+  </a>
 </div>
