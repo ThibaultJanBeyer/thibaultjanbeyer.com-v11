@@ -8,9 +8,12 @@
         {% include "partials/projects/projects-accessibility.html" %}
       {% else %}
         <div class="section-{{ project.side }} section-card projects-card projects-card__{{ project.title | lower }}">
-          <div class="section-card__inner">
-            <h3 class="h2 copy">{{ project.title }}</h3>
-          </div>
+          <a href="{{ project.href }}" class="section-card__inner section-card__link">
+            <div class="section-card__container">
+              <h3 class="h2 copy section-card__title up">{{ project.title }}</h3>
+              <p class="copy down">{{ project.description }}</p>
+            </div>
+          </a>
         </div>
       {% endif %}
     {% endfor %}
