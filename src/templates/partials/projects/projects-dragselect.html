@@ -1,0 +1,15 @@
+<div class="section-{{ project.side }} projects-dragselect section-card projects-card projects-card__{{ project.title | lower }}">
+  <a href="{{ project.href }}" class="section-card__inner section-card__link">
+    <div class="section-card__container">
+      <h3 class="h2 copy section-card__title projects-dragselect__title up">{{ project.title }}</h3>
+      {% if project.img %}
+        <img class="section-card__image expand"
+          src="{{ project.img.src }}" alt="{{ project.img.alt }}">
+      {% endif %}
+      <p class="copy projects-dragselect__text down">{{ project.description }}</p>
+    </div>
+    <div class="section-card__award project-dragselect__stars down">
+      <span id="dragselect-gh-stars">>100</span> <i class="fas fa-star"></i>
+    </div>
+  </a>
+</div>

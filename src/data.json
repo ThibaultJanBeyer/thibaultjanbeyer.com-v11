@@ -23,8 +23,13 @@
     },
     "links": [
       {
-        "title": "portfolio",
-        "href": "#portfolio",
+        "title": "projects",
+        "href": "#projects",
+        "internal": true
+      },
+      {
+        "title": "work",
+        "href": "#work",
         "internal": true
       },
       {
@@ -47,15 +52,20 @@
         "description": "I wrote one of the best selection algorithm in pure javascript and without any dependencies.",
         "href": "https://github.com/thibaultjanbeyer/dragselect",
         "img": {
-          "src": "",
-          "alt": ""
+          "src": "assets/img/dragselect.gif",
+          "alt": "DragSelect example gif"
         },
         "side": "half"
       },
       {
         "title": "DragNDrop",
-        "description": "Hardware Accelerated drag and drop functionality written in vanillajs without dependencies",
-        "side": "half"
+        "description": "Hardware Accelerated drag and drop functionality written in vanillajs, no dependencies",
+        "href": "https://github.com/thibaultjanbeyer/dragndrop",
+        "side": "half",
+        "img": {
+          "src": "assets/img/dragndrop.gif",
+          "alt": "DragNDrop example gif"
+        }
       },
       {
         "title": "Accessibility",

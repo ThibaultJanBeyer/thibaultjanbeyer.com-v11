@@ -69,7 +69,7 @@
     transform: translateY(-5px);
   }
   &:hover .expand {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
   &:hover .contract {
     transform: scale(0.95);
@@ -95,6 +95,7 @@
   position: absolute;
   top: 20px;
   right: 20px;
+  font-size: 0.8rem;
 
   span {
     font-size: 0.7rem;
@@ -110,4 +111,9 @@
 
 .section-card__title {
   margin-top: 0;
+}
+
+.section-card__image {
+  text-decoration: none;
+  width: 50%;
 }
