@@ -14,7 +14,10 @@ module.exports = function() {
       .watch("./src/assets/svg/**/*.svg", gulp.series(["svg"]))
       .on("change", log),
     gulp
-      .watch("./src/assets/img/**/*.+(jpg|jpeg|gif|png)", gulp.series(["img"]))
+      .watch(
+        "./src/assets/img/**/*.+(jpg|jpeg|gif|png|svg)",
+        gulp.series(["img"])
+      )
       .on("change", log),
     gulp
       .watch("./src/assets/stylesheet/**/*.scss", gulp.series(["sass"]))

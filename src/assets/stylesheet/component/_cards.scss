@@ -75,7 +75,27 @@
   margin-top: 0;
 }
 
+.cards__img,
 .cards__image {
   text-decoration: none;
   width: 50%;
+  max-width: 300px;
+  margin-bottom: 15px;
+}
+
+.cards__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.4) grayscale(100%) sepia(30%);
+  transition: transform 500ms ease-in-out, filter 500ms ease-in-out;
+
+  .cards__link:active &,
+  .cards__link:focus &,
+  .cards__link:hover & {
+    filter: brightness(0.5) grayscale(0%) sepia(0%);
+  }
 }

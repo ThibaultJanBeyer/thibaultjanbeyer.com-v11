@@ -28,8 +28,8 @@
         "internal": true
       },
       {
-        "title": "work",
-        "href": "#work",
+        "title": "works",
+        "href": "#works",
         "internal": true
       },
       {
@@ -77,7 +77,7 @@
         "side": "full",
         "description": "I have a blog where I write about all my works & projects as well as other IT & Art related topics",
         "href": "https://blog.thibaultjanbeyer.com/",
-        "img": {
+        "background": {
           "src": "assets/img/typewriter.jpg",
           "alt": "Blogging about the web & fun stuff"
         }
@@ -88,12 +88,16 @@
     "title": "Works.",
     "all": {
       "1&1": {
-        "title": "1&1 IONOS PRO",
+        "title": false,
         "description": "Re-build the Data Center Designer to improve code quality, optimize user experience, reduce customer churn and increase sing-ups",
         "side": "full",
         "img": {
-          "src": "assets/img/typewriter.jpg",
-          "alt": "Blogging about the web & fun stuff"
+          "src": "assets/img/ionos.svg",
+          "alt": "IONOS"
+        },
+        "background": {
+          "src": "assets/img/ionos.png",
+          "alt": "Data Center Designer"
         }
       }
     }

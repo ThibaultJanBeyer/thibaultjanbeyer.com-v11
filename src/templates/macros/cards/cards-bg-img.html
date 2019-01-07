@@ -1,11 +1,19 @@
 {% macro cards_bg_img(obj, id) %}
   <div class="section-{{ obj.side }} cards cards--{{ id }}">
     <a href="{{ obj.href }}" class="cards__inner cards__link cards__link--{{ id }}">
-      <img class="cards__img--{{ id }} cards__img expand" src="{{ obj.img.src }}" alt="{{ obj.img.alt }}">
+      {% if obj.background %}
+        <img class="cards__background--{{ id }} cards__background expand" src="{{ obj.background.src }}" alt="{{ obj.background.alt }}">
+      {% endif %}
       <div class="cards__container cards__container--{{ id }}">
-        <h3 class="h2 copy cards__title cards__title--{{ id }} up">{{ obj.title }}</h3>
-        <div class="cards__bar cards__bar--{{ id }} expand"></div>
-        <p class="copy cards__text--{{ id }} down">{{ obj.description }}</p>
+        {% if obj.title %}
+          <h3 class="h2 copy cards__title cards__title--{{ id }} up">{{ obj.title }}</h3>
+        {% endif %}
+        {% if obj.img %}
+          <img class="cards__img--{{ id }} cards__img contract" src="{{ obj.img.src }}" alt="{{ obj.img.alt }}">
+        {% else %}
+          <div class="cards__bar cards__bar--{{ id }} expand"></div>
+        {% endif %}
+        <p class="copy cards__text cards__text--{{ id }} down">{{ obj.description }}</p>
       </div>
     </a>
   </div>
