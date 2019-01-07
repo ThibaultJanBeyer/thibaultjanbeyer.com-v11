@@ -48,6 +48,11 @@
     "title": "Projects.",
     "all": [
       {
+        "title": "Accessibility",
+        "description": "I could not find satisfying documentation on Accessibility, so I wrote the probably most comprehensible one. This was my studies final thesis and won 3 awards.",
+        "side": "full"
+      },
+      {
         "title": "DragSelect",
         "description": "I wrote one of the best selection algorithm in pure javascript and without any dependencies.",
         "href": "https://github.com/thibaultjanbeyer/dragselect",
@@ -68,21 +73,14 @@
         }
       },
       {
-        "title": "Accessibility",
-        "description": "I could not find satisfying documentation on Accessibility, so I wrote the probably most comprehensible one. This was my studies final thesis.",
-        "side": "full"
-      },
-      {
-        "title": "Webcomponents",
-        "side": "half"
-      },
-      {
-        "title": "Psychedelics",
-        "side": "half"
-      },
-      {
         "title": "Blog",
-        "side": "full"
+        "side": "full",
+        "description": "I have a blog where I write about all my works & projects as well as other IT & Art related topics",
+        "href": "https://blog.thibaultjanbeyer.com/",
+        "img": {
+          "src": "assets/img/typewriter.jpg",
+          "alt": "Blogging about the web & fun stuff"
+        }
       }
     ]
   },

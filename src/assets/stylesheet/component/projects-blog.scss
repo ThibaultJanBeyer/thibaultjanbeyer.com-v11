@@ -1,0 +1,16 @@
+.projects-blog__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+  transition: 
+    transform 500ms ease-in-out,
+    filter 500ms ease-in-out;
+
+  .projects-blog__link:hover & {
+    filter: brightness(0.7);
+  }
+}

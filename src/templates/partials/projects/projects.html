@@ -10,6 +10,8 @@
         {% include "partials/projects/projects-dragselect.html" %}
       {% elif project.title === 'DragNDrop' %}
         {% include "partials/projects/projects-dragndrop.html" %}
+      {% elif project.title === 'Blog' %}
+        {% include "partials/projects/projects-blog.html" %}
       {% else %}
         <div class="section-{{ project.side }} section-card projects-card projects-{{ project.title | lower }}">
           <a href="{{ project.href }}" class="section-card__inner section-card__link">
