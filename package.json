@@ -4,7 +4,7 @@
   "description": "Thibault Jan Beyer's Portfolio",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp"
+    "start": "http-server & gulp"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",

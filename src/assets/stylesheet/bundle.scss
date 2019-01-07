@@ -15,11 +15,14 @@
 
 // Component
 @import "component/_section";
+
+@import "component/_cards";
+@import "component/cards--blog";
+
 @import "component/welcome";
 @import "component/about";
 @import "component/projects";
 @import "component/projects-accessibility";
-@import "component/projects-blog";
 @import "component/projects-dragselect";
 @import "component/projects-dragndrop";
 @import "component/footer";

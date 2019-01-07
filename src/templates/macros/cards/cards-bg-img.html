@@ -1,0 +1,12 @@
+{% macro cards_bg_img(obj, id) %}
+  <div class="section-{{ obj.side }} cards cards--{{ id }}">
+    <a href="{{ obj.href }}" class="cards__inner cards__link cards__link--{{ id }}">
+      <img class="cards__img--{{ id }} cards__img expand" src="{{ obj.img.src }}" alt="{{ obj.img.alt }}">
+      <div class="cards__container cards__container--{{ id }}">
+        <h3 class="h2 copy cards__title cards__title--{{ id }} up">{{ obj.title }}</h3>
+        <div class="cards__bar cards__bar--{{ id }} expand"></div>
+        <p class="copy cards__text--{{ id }} down">{{ obj.description }}</p>
+      </div>
+    </a>
+  </div>
+{% endmacro %}

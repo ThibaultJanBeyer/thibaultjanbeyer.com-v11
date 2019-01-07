@@ -11,20 +11,8 @@
       {% elif project.title === 'DragNDrop' %}
         {% include "partials/projects/projects-dragndrop.html" %}
       {% elif project.title === 'Blog' %}
-        {% include "partials/projects/projects-blog.html" %}
-      {% else %}
-        <div class="section-{{ project.side }} section-card projects-card projects-{{ project.title | lower }}">
-          <a href="{{ project.href }}" class="section-card__inner section-card__link">
-            <div class="section-card__container">
-              <h3 class="h2 copy section-card__title up">{{ project.title }}</h3>
-              {% if project.img %}
-                <img class="section-card__image expand"
-                  src="{{ project.img.src }}" alt="{{ project.img.alt }}">
-              {% endif %}
-              <p class="copy down">{{ project.description }}</p>
-            </div>
-          </a>
-        </div>
+        {% import "macros/cards/cards-bg-img.html" as c %}
+        {{ c.cards_bg_img(project, 'blog') }}
       {% endif %}
     {% endfor %}
   </div>
