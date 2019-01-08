@@ -16,5 +16,12 @@
         <p class="copy cards__text cards__text--{{ id }} down">{{ obj.description }}</p>
       </div>
     </a>
+    {% if obj.icons %}
+      <div class="cards__icons expand">
+        {% for icon in obj.icons %}
+          <img class="cards__icon--{{ id }} cards__icon" src="{{ icon }}" alt="" aria-hidden="true">
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
 {% endmacro %}

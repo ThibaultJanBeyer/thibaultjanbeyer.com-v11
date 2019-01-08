@@ -6,7 +6,7 @@
     {% for key, work in works.all %}
       {% if key === '1&1' %}
         {% import "macros/cards/cards-bg-img.html" as c %}
-        {{ c.cards_bg_img(work, 'blog') }}
+        {{ c.cards_bg_img(work, '1and1') }}
       {% elif project.title === 'DragSelect' %}
       {% elif project.title === 'DragNDrop' %}
       {% elif project.title === 'Blog' %}

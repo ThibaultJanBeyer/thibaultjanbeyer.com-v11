@@ -1,0 +1,27 @@
+.cards__icon--1and1:nth-child(1) {
+  top: 90%;
+  left: 30%;
+  transform: rotate(325deg);
+  width: 40px;
+}
+
+.cards__icon--1and1:nth-child(2) {
+  top: -5%;
+  left: 80%;
+  transform: rotate(100deg);
+  width: 40px;
+}
+
+.cards__icon--1and1:nth-child(3) {
+  top: 85%;
+  left: 90%;
+  transform: rotate(300deg);
+  width: 120px;
+}
+
+.cards__icon--1and1:nth-child(4) {
+  top: 10%;
+  left: -5%;
+  transform: rotate(330deg);
+  width: 120px;
+}

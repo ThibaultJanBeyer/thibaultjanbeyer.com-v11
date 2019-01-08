@@ -98,7 +98,13 @@
         "background": {
           "src": "assets/img/ionos.png",
           "alt": "Data Center Designer"
-        }
+        },
+        "icons": [
+          "assets/img/ionos-internet.png",
+          "assets/img/ionos-loadbalancer.png",
+          "assets/img/ionos-storage.png",
+          "assets/img/ionos-server-open.png"
+        ]
       }
     }
   },

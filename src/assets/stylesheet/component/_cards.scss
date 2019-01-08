@@ -26,16 +26,39 @@
   cursor: pointer;
   overflow: hidden;
 
-  &:hover .up {
+  &:hover .up,
+  &:focus .up,
+  &:active .up,
+  &:hover + .up,
+  &:focus + .up,
+  &:active + .up {
     transform: translateY(-5px);
   }
-  &:hover .expand {
+
+  &:hover .expand,
+  &:focus .expand,
+  &:active .expand,
+  &:hover + .expand,
+  &:focus + .expand,
+  &:active + .expand {
     transform: scale(1.1);
   }
-  &:hover .contract {
+
+  &:hover .contract,
+  &:focus .contract,
+  &:active .contract,
+  &:hover + .contract,
+  &:focus + .contract,
+  &:active + .contract {
     transform: scale(0.95);
   }
-  &:hover .down {
+
+  &:hover .down,
+  &:focus .down,
+  &:active .down,
+  &:hover + .down,
+  &:focus + .down,
+  &:active + .down {
     transform: translateY(5px);
   }
 }
@@ -90,12 +113,25 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.4) grayscale(100%) sepia(30%);
+  filter: brightness(0.3) grayscale(100%) sepia(30%);
   transition: transform 500ms ease-in-out, filter 500ms ease-in-out;
 
   .cards__link:active &,
   .cards__link:focus &,
   .cards__link:hover & {
-    filter: brightness(0.5) grayscale(0%) sepia(0%);
+    filter: brightness(0.4) grayscale(0%) sepia(0%);
   }
+}
+
+.cards__icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.cards__icon {
+  position: absolute;
 }
