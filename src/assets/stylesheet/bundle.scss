@@ -15,12 +15,16 @@
 
 // Component
 @import "component/_section";
+
 @import "component/_cards";
 @import "component/cards-1and1";
+@import "component/cards-vorablesen";
+@import "component/cards-bmw";
+@import "component/cards-neomatcha";
+@import "component/cards-dragndrop";
+@import "component/cards-dragselect";
+@import "component/cards-accessibility";
+
 @import "component/welcome";
 @import "component/about";
-@import "component/projects";
-@import "component/projects-accessibility";
-@import "component/projects-dragselect";
-@import "component/projects-dragndrop";
 @import "component/footer";

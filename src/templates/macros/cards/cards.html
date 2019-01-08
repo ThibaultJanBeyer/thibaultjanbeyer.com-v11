@@ -1,4 +1,4 @@
-{% macro cards_bg_img(obj, id) %}
+{% macro card(obj, id) %}
   <div class="section-{{ obj.side }} cards cards--{{ id }}">
     <a href="{{ obj.href }}" class="cards__inner cards__link cards__link--{{ id }}">
       {% if obj.background %}
@@ -13,14 +13,26 @@
         {% else %}
           <div class="cards__bar cards__bar--{{ id }} expand"></div>
         {% endif %}
-        <p class="copy cards__text cards__text--{{ id }} down">{{ obj.description }}</p>
+        <p class="copy cards__text cards__text--{{ id }} down">{{ obj.description | safe }}</p>
       </div>
     </a>
     {% if obj.icons %}
-      <div class="cards__icons expand">
-        {% for icon in obj.icons %}
-          <img class="cards__icon--{{ id }} cards__icon" src="{{ icon }}" alt="" aria-hidden="true">
-        {% endfor %}
+      <div class="cards__icons cards__icons--{{ id }} expand">
+        {% if obj.icons.amount %}
+          {% for icon in range(0, obj.icons.amount) %}
+            <div class="cards__icon--{{ id }} cards__icon" aria-hidden="true"></div>
+          {% endfor %}
+        {% else %}
+          {% for icon in obj.icons %}
+            <img class="cards__icon--{{ id }} cards__icon" src="{{ icon }}" alt="" aria-hidden="true">
+          {% endfor %}
+        {% endif %}
+      </div>
+    {% endif %}
+    {% if obj.stars %}
+      <div class="cards__award cards__award--{{ id }} up">
+        <span id="{{ obj.stars.id }}">{{ obj.stars.amount }}</span>
+        <i class="{{ obj.stars['icon-class'] }}"></i>
       </div>
     {% endif %}
   </div>

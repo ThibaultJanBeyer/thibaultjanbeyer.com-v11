@@ -14,11 +14,20 @@ gulp.task("watch", require("./gulp-tasks/watch"));
 // Globs
 gulp.task(
   "build",
-  gulp.series(["html", "sass", "javascript", "moving", "svg", "img"])
+  gulp.series(["clean", "html", "sass", "javascript", "moving", "svg", "img"])
 );
 gulp.task(
   "devl",
-  gulp.series(["html", "sass", "javascript", "moving", "svg", "img", "watch"])
+  gulp.series([
+    "clean",
+    "html",
+    "sass",
+    "javascript",
+    "moving",
+    "svg",
+    "img",
+    "watch"
+  ])
 );
 
 // Default task

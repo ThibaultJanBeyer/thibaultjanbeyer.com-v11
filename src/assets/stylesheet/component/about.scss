@@ -1,9 +1,11 @@
 .about-image {
   width: 100%;
-  height: 500px;
+  height: 400px;
+  grid-column: span 2;
 
   @include media(">medium") {
     height: auto;
+    grid-column: auto;
   }
 }
 
@@ -15,6 +17,11 @@
 .about-text {
   background: #183e30; /* 1. */
   padding: 60px 60px 60px 50px;
+  grid-column: span 2;
+
+  @include media(">medium") {
+    grid-column: auto;
+  }
 }
 
 .about-text__link {

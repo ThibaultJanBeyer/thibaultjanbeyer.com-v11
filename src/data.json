@@ -50,7 +50,15 @@
       {
         "title": "Accessibility",
         "description": "I could not find satisfying documentation on Accessibility, so I wrote the probably most comprehensible one. This was my studies final thesis and won 3 awards.",
-        "side": "full"
+        "side": "full",
+        "stars": {
+          "amount": "x3",
+          "icon-class": "fas fa-award",
+          "id": "accessibility-awards"
+        },
+        "icons": {
+          "amount": "10"
+        }
       },
       {
         "title": "DragSelect",
@@ -60,7 +68,12 @@
           "src": "assets/img/dragselect.gif",
           "alt": "DragSelect example gif"
         },
-        "side": "half"
+        "side": "half",
+        "stars": {
+          "amount": ">100",
+          "icon-class": "fas fa-star",
+          "id": "dragselect-gh-stars"
+        }
       },
       {
         "title": "DragNDrop",
@@ -70,6 +83,11 @@
         "img": {
           "src": "assets/img/dragndrop.gif",
           "alt": "DragNDrop example gif"
+        },
+        "stars": {
+          "amount": ">30",
+          "icon-class": "fas fa-star",
+          "id": "dragndrop-gh-stars"
         }
       },
       {
@@ -87,7 +105,7 @@
   "works": {
     "title": "Works.",
     "all": {
-      "1&1": {
+      "1and1": {
         "title": false,
         "description": "Re-build the Data Center Designer to improve code quality, optimize user experience, reduce customer churn and increase sing-ups",
         "side": "full",
@@ -106,6 +124,43 @@
           "assets/img/ionos-storage.png",
           "assets/img/ionos-server-open.png"
         ]
+      },
+      "vorablesen": {
+        "description": "Creating the Vorablesen brand for edenspiekermann_ User experience, branding and customer facing logic. Leading to a more engaged and bigger community.",
+        "side": "half",
+        "href": "https://www.vorablesen.de/",
+        "img": {
+          "src": "assets/img/vorablesen-logo.png",
+          "alt": "Vorablesen logo"
+        },
+        "background": {
+          "src": "assets/img/vorablesen.png",
+          "alt": "Vorablesen Website"
+        }
+      },
+      "neomatcha": {
+        "title": "neomatcha",
+        "description": "Loving greentea but unable to find an adequate matcha in Germany, I went out and found the best green tea you can get, now selling it via neomatcha.",
+        "side": "half",
+        "href": "https://neomatcha.com/",
+        "background": {
+          "src": "assets/img/neomatcha.jpg",
+          "alt": "Landing page of neomatcha"
+        }
+      },
+      "bmw": {
+        "description": "Build the BMW Dealer-Locator from scratch, making it easy for potential customers from anywhere in the world to find their BMW car dealer",
+        "side": "full",
+        "href": "https://www.bmw.ca/en/fastlane/dealer-locator.html",
+        "img": {
+          "src": "assets/img/bmw.png",
+          "alt": "BMW"
+        },
+        "background": {
+          "src": "assets/img/dlo.png",
+          "alt": "BMW Dealer Locator"
+        },
+        "icons": ["assets/img/bmw-car.png"]
       }
     }
   },

@@ -4,15 +4,15 @@
   </h2>
   <div class="section__container projects__container">
     {% for project in projects.all %}
+      {% import "macros/cards/cards.html" as cards %}
       {% if project.title === 'Accessibility' %}
-        {% include "partials/projects/projects-accessibility.html" %}
+        {{ cards.card(project, 'accessibility') }}
       {% elif project.title === 'DragSelect' %}
-        {% include "partials/projects/projects-dragselect.html" %}
+        {{ cards.card(project, 'dragselect') }}
       {% elif project.title === 'DragNDrop' %}
-        {% include "partials/projects/projects-dragndrop.html" %}
+        {{ cards.card(project, 'dragndrop') }}
       {% elif project.title === 'Blog' %}
-        {% import "macros/cards/cards-bg-img.html" as c %}
-        {{ c.cards_bg_img(project, 'blog') }}
+        {{ cards.card(project, 'blog') }}
       {% endif %}
     {% endfor %}
   </div>

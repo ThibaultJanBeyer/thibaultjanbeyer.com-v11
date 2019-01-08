@@ -21,16 +21,20 @@
 
 .section-half,
 .section-center {
-  @include media(">medium") {
-    grid-row: auto;
-  }
+  grid-row: auto;
+  grid-column: span 2;
 
-  &:before {
-    content: "";
-    display: inline-block;
-    width: 1px;
-    height: 0;
-    padding-bottom: 50%;
+  @include media(">medium") {
+    grid-column: auto;
+
+    // get full height
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 0;
+      padding-bottom: 50%;
+    }
   }
 }
 
