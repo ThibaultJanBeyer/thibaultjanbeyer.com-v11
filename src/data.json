@@ -91,6 +91,7 @@
         "title": false,
         "description": "Re-build the Data Center Designer to improve code quality, optimize user experience, reduce customer churn and increase sing-ups",
         "side": "full",
+        "href": "https://dcd.ionos.com/?testDrive=true",
         "img": {
           "src": "assets/img/ionos.svg",
           "alt": "IONOS"
