@@ -45,14 +45,16 @@
     ]
   },
   "projects": {
+    "id": "projects",
+    "description": "Work I do in my free time for fun",
     "title": "Projects.",
-    "all": [
-      {
+    "all": {
+      "accessibility": {
         "title": "Accessibility",
         "description": "I could not find satisfying documentation on Accessibility, so I wrote the probably most comprehensible one. This was my studies final thesis and won 3 awards.",
         "side": "full",
         "stars": {
-          "amount": "x3",
+          "amount": "3",
           "icon-class": "fas fa-award",
           "id": "accessibility-awards",
           "description": "amount of awards I won for this project"
@@ -61,7 +63,7 @@
           "amount": "10"
         }
       },
-      {
+      "dragselect": {
         "title": "DragSelect",
         "description": "I wrote one of the best selection algorithm in pure javascript and without any dependencies.",
         "href": "https://github.com/thibaultjanbeyer/dragselect",
@@ -77,7 +79,7 @@
           "description": "amount of github stars for this project"
         }
       },
-      {
+      "dragndrop": {
         "title": "DragNDrop",
         "description": "Hardware Accelerated drag and drop functionality written in vanillajs, no dependencies",
         "href": "https://github.com/thibaultjanbeyer/dragndrop",
@@ -93,7 +95,7 @@
           "description": "amount of github stars for this project"
         }
       },
-      {
+      "blog": {
         "title": "Blog",
         "side": "full",
         "description": "I have a blog where I write about all my works & projects as well as other IT & Art related topics",
@@ -103,9 +105,11 @@
           "alt": "Blogging about the web & fun stuff"
         }
       }
-    ]
+    }
   },
   "works": {
+    "id": "works",
+    "description": "Work I do for money",
     "title": "Works.",
     "all": {
       "1and1": {

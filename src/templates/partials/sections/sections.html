@@ -1,0 +1,13 @@
+{% for element in[projects, works] %}
+  <section id="{{ element.id }}" class="section section--{{ element.id }}" role="region" aria-label="{{ element.description }}">
+    <h2 class="h2 section__title section__title--{{ elemnt.id }} copy">
+      {{ element.title }}
+    </h2>
+    <div class="section__container section__container--{{ element.id }}">
+      {% for key, obj in element.all %}
+        {% import "macros/cards/cards.html" as cards %}
+        {{ cards.card(obj, key, common) }}
+      {% endfor %}
+    </div>
+  </section>
+{% endfor %}
