@@ -11,4 +11,4 @@ Folder structure:
 > src –– the working folder  
 data.json holds all textual data  
 
-*Note: you can find all versions of my website (starting at version 1 made in 2002) via http://blog.thibaultjanbeyer.com/older-versions-of-my-website/*
+*Note: you can find all versions of my website (starting at version 1 made in 2002) via http://blog.thibaultjanbeyer.com/old-versions-website-archive/*
