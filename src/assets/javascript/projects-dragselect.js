@@ -1,4 +1,4 @@
-fetch("http://api.github.com/repos/thibaultjanbeyer/dragselect")
+fetch("//api.github.com/repos/thibaultjanbeyer/dragselect")
   .then(res => res.json())
   .then(res => {
     document.querySelector("#dragselect-gh-stars").innerHTML =
