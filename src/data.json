@@ -54,7 +54,8 @@
         "stars": {
           "amount": "x3",
           "icon-class": "fas fa-award",
-          "id": "accessibility-awards"
+          "id": "accessibility-awards",
+          "description": "amount of awards I won for this project"
         },
         "icons": {
           "amount": "10"
@@ -72,7 +73,8 @@
         "stars": {
           "amount": ">100",
           "icon-class": "fas fa-star",
-          "id": "dragselect-gh-stars"
+          "id": "dragselect-gh-stars",
+          "description": "amount of github stars for this project"
         }
       },
       {
@@ -87,7 +89,8 @@
         "stars": {
           "amount": ">30",
           "icon-class": "fas fa-star",
-          "id": "dragndrop-gh-stars"
+          "id": "dragndrop-gh-stars",
+          "description": "amount of github stars for this project"
         }
       },
       {

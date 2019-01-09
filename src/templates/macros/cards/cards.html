@@ -1,6 +1,9 @@
 {% macro card(obj, id) %}
   <div class="section-{{ obj.side }} cards cards--{{ id }}">
     <a href="{{ obj.href }}" class="cards__inner cards__link cards__link--{{ id }}">
+      <span class="sr-only">
+        {{ common['external-link'] }}
+      </span>
       {% if obj.background %}
         <img class="cards__background--{{ id }} cards__background expand" src="{{ obj.background.src }}" alt="{{ obj.background.alt }}">
       {% endif %}
@@ -30,8 +33,13 @@
       </div>
     {% endif %}
     {% if obj.stars %}
-      <div class="cards__award cards__award--{{ id }} up">
-        <span id="{{ obj.stars.id }}">{{ obj.stars.amount }}</span>
+      <div class="cards__stars cards__stars--{{ id }} up">
+        <span id="{{ obj.stars.id }}">
+          {{ obj.stars.amount }}
+          <span class="sr-only">
+            {{ obj.stars.description }}
+          </span>
+        </span>
         <i class="{{ obj.stars['icon-class'] }}"></i>
       </div>
     {% endif %}
