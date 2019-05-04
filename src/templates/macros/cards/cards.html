@@ -1,47 +1,64 @@
 {% macro card(obj, id, common) %}
-  <div class="section-{{ obj.side }} cards cards--{{ id }}">
-    <a href="{{ obj.href }}" class="cards__inner cards__link cards__link--{{ id }}">
-      <span class="sr-only">
-        {{ common['external-link'].title }}
-      </span>
-      {% if obj.background %}
-        <img class="cards__background--{{ id }} cards__background expand" src="{{ obj.background.src }}" alt="{{ obj.background.alt }}">
+<div class="section-{{ obj.side }} cards cards--{{ id }}">
+  <a
+    href="{{ obj.href }}"
+    class="cards__inner cards__link cards__link--{{ id }}"
+  >
+    <span class="sr-only">
+      {{ common["external-link"].title }}
+    </span>
+    {% if obj.background %}
+    <img
+      class="cards__background--{{ id }} cards__background expand"
+      src="{{ obj.background.src }}"
+      alt="{{ obj.background.alt }}"
+    />
+    {% endif %}
+    <div class="cards__container cards__container--{{ id }}">
+      {% if obj.title %}
+      <h3 class="h2 copy cards__title cards__title--{{ id }} up">
+        {{ obj.title }}
+      </h3>
+      {% endif %} {% if obj.img %}
+      <img
+        class="cards__img--{{ id }} cards__img contract"
+        src="{{ obj.img.src }}"
+        alt="{{ obj.img.alt }}"
+      />
+      {% else %}
+      <div class="cards__bar cards__bar--{{ id }} expand"></div>
       {% endif %}
-      <div class="cards__container cards__container--{{ id }}">
-        {% if obj.title %}
-          <h3 class="h2 copy cards__title cards__title--{{ id }} up">{{ obj.title }}</h3>
-        {% endif %}
-        {% if obj.img %}
-          <img class="cards__img--{{ id }} cards__img contract" src="{{ obj.img.src }}" alt="{{ obj.img.alt }}">
-        {% else %}
-          <div class="cards__bar cards__bar--{{ id }} expand"></div>
-        {% endif %}
-        <p class="copy cards__text cards__text--{{ id }} down">{{ obj.description | safe }}</p>
-      </div>
-    </a>
-    {% if obj.icons %}
-      <div class="cards__icons cards__icons--{{ id }} expand">
-        {% if obj.icons.amount %}
-          {% for icon in range(0, obj.icons.amount) %}
-            <div class="cards__icon--{{ id }} cards__icon" aria-hidden="true"></div>
-          {% endfor %}
-        {% else %}
-          {% for icon in obj.icons %}
-            <img class="cards__icon--{{ id }} cards__icon" src="{{ icon }}" alt="" aria-hidden="true">
-          {% endfor %}
-        {% endif %}
-      </div>
-    {% endif %}
-    {% if obj.stars %}
-      <p class="cards__stars cards__stars--{{ id }} up">
-        <span id="{{ obj.stars.id }}">
-          {{ obj.stars.amount }}
-          <span class="sr-only">
-            {{ obj.stars.description }}
-          </span>
-        </span>
-        <i class="{{ obj.stars['icon-class'] }}"></i>
+      <p class="copy cards__text cards__text--{{ id }} down">
+        {{ obj.description | safe }}
       </p>
-    {% endif %}
+    </div>
+  </a>
+  {% if obj.icons %}
+  <div class="cards__icons cards__icons--{{ id }} expand">
+    {% if obj.icons.amount %} {% for icon in range(0, obj.icons.amount) %}
+    <div class="cards__icon--{{ id }} cards__icon" aria-hidden="true"></div>
+    {% endfor %} {% else %} {% for icon in obj.icons %}
+    <img
+      class="cards__icon--{{ id }} cards__icon"
+      src="{{ icon }}"
+      alt=""
+      aria-hidden="true"
+    />
+    {% endfor %} {% endif %}
   </div>
+  {% endif %} {% if obj.stars %}
+  <p class="cards__stars cards__stars--{{ id }} up">
+    <span id="{{ obj.stars.id }}">
+      <span>
+        {{ obj.stars.amount }}
+      </span>
+      &nbsp;
+      <span class="sr-only">
+        {{ obj.stars.description }}
+      </span>
+    </span>
+    <i class="{{ obj.stars['icon-class'] }}"></i>
+  </p>
+  {% endif %}
+</div>
 {% endmacro %}
