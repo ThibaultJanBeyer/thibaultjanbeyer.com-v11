@@ -1,9 +1,14 @@
 # thibaultjanbeyer.com-v11
 
-Version 11 of my website 2018
+Source files for my personal site at thibaultjanbeyer.com (Version 11)  
+Made in 2018 when I was 27.  
+Feel free to look around.  
 
-Back then I was 27 Years old with a profound knowledge in JavaScript. Both front and backend.
-I also know deployment and server architecture quite well.
-I’m learning big scale application/code architecture.
+Folder structure:
+> docs –– the clean distribution folder  
+> gulp-tasks –– managing gulp  
+> originals –– this folder holds all the .psd, .ai and other originals  
+> src –– the working folder  
+data.json holds all textual data  
 
-Visit: https://thibaultjanbeyer.github.io/thibaultjanbeyer.com-v11/
+*Note: you can find all versions of my website (starting at version 1 made in 2002) via http://blog.thibaultjanbeyer.com/old-versions-website-archive/*
