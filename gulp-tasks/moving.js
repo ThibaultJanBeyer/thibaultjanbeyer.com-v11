@@ -1,6 +1,6 @@
 var gulp = require("gulp");
 
-var mSrc = "./src/CNAME",
+var mSrc = "./src/meta/*",
   mDst = "./docs/";
 
 module.exports = function() {
