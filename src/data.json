@@ -19,7 +19,7 @@
     "info": {
       "top": "Hi, I’m",
       "name": "Thibault Jan Beyer",
-      "text": "Your ambitious award winning full-stack engineer from Belgium. Currently living, learning, working and playing in Berlin, Germany."
+      "text": "Your ambitious award winning full-stack engineer from Belgium. Currently living, learning, working and playing in Bonn, Germany."
     },
     "links": [
       {
@@ -49,9 +49,26 @@
     "description": "Work I do in my free time for fun",
     "title": "Projects.",
     "all": {
+      "architecture": {
+        "title": "Architecture Decision Studio",
+        "description": "A framework for teams to drive fast, actionable and collaborative decisions",
+        "href": "https://engineering.klarna.com/architecture-decision-studio-4627aa6aa6fb",
+        "side": "full",
+        "stars": {
+          "amount": "102",
+          "icon-class": "fa-solid fa-hands-clapping",
+          "id": "medium-claps",
+          "description": "amount of claps the article received"
+        },
+        "background": {
+          "src": "assets/img/architecture-decision.png",
+          "alt": "Blogging about the web & fun stuff"
+        }
+      },
       "accessibility": {
         "title": "Accessibility",
         "description": "I could not find satisfying documentation on Accessibility, so I wrote the probably most comprehensible one. This was my studies final thesis and won 3 awards.",
+        "href": "https://learn-accessibility.org/",
         "side": "full",
         "stars": {
           "amount": "3",
@@ -112,9 +129,23 @@
     "description": "Work I do for money",
     "title": "Works.",
     "all": {
+      "klarna": {
+        "title": false,
+        "description": "Build up a highly efficient team to create an internal marketing tool from the ground up.",
+        "side": "full",
+        "href": "https://klarna.com/",
+        "img": {
+          "src": "assets/img/klarna-pink.png",
+          "alt": "Klarna"
+        },
+        "background": {
+          "src": "assets/img/klarna-game.png",
+          "alt": "Klarna Game"
+        }
+      },
       "1and1": {
         "title": false,
-        "description": "Build the Data Center Designer to improve code quality, optimize user experience, reduce customer churn and increase sing-ups",
+        "description": "Build the Data Center Designer to improve code quality, optimize user experience, reduce customer churn and increase sing-ups.",
         "side": "full",
         "href": "https://dcd.ionos.com/?testDrive=true",
         "img": {
@@ -156,7 +187,7 @@
         }
       },
       "bmw": {
-        "description": "Build the BMW Dealer-Locator from scratch, making it easy for potential customers from anywhere in the world to find their BMW car dealer",
+        "description": "Build the BMW Dealer-Locator from scratch, making it easy for potential customers from anywhere in the world to find their BMW car dealer.",
         "side": "full",
         "href": "https://www.bmw.ca/en/fastlane/dealer-locator.html",
         "img": {
@@ -178,9 +209,9 @@
       "alt": "Thibault Jan Beyer visiting Kimchi Princess Restaurant in Berlin"
     },
     "text": [
-      "I build apps on the web. People I work with nowadays call me an Engineering Manager. At the age of 11 I’ve build my first website, since then, I’ve never stopped coding. Around 10 years ago I turned my passion into a profession. Since then, I’ve build dozens of single page apps. It’s fair to say that I’m an expert for rich internet applications.",
-      "I’ve worked for various companies, some huge, some small. Currently, I am employed at Klarna Bank AB. In past, I’ve worked for 1&1 IONOS PRO Cloud GmbH, BMW, Hi-Res, APT, Neomatcha, Outdoorgym, Rubbeldiekatz, Vorablesen, edenspiekermann_, and many more. I like to contribute and take ownership over the whole process end to end: conception, design, architecture, frontend, backend.",
-      "For me, it’s much more than just another job. In my spare time, if I’m not traveling or playing, I’m contributing and writing open source projects and tools for which I was fortunate enough to win some awards.",
+      "People I work with nowadays call me an Engineering Manager. At the age of 11 I’ve build my first website, since then, I’ve never stopped coding. Around 10 years ago I turned my passion into a profession. Since then, I’ve build dozens of single page apps. It’s fair to say that I’m an expert for rich internet applications.",
+      "I’ve worked for various companies, some huge, some small. Currently, I am employed at Klarna Bank AB. In past, I’ve worked for 1&1 IONOS PRO Cloud GmbH, BMW, Hi-Res, APT, Neomatcha, Outdoorgym, Rubbeldiekatz, Vorablesen, edenspiekermann_, and more. I like building things, whether that is building great teams, software, systems, products, games, bunk beds, trust, design, architecture or sand castles, count me in! Now mentoring and enabling others to reach new heights.",
+      "For me, it’s much more than just another job. In my spare time, if I’m not traveling or playing, I’m contributing and writing open source projects and tools for which I was fortunate enough to win some awards and recognition.",
       "You can find details on my career path at <a href='https://www.linkedin.com/in/thibault-jan-beyer-96997a72/' class='metalink about-text__link'><i class='fab fa-linkedin'></i> linkedin</a>, browse through my open source projects on <a href='http://github.com/thibaultjanbeyer/' class='metalink about-text__link'><i class='fab fa-github'></i> github</a>, hear me <a href='https://twitter.com/ThibaultBeyer/' class='metalink about-text__link'><i class='fab fa-twitter'></i> tweet</a> and checkout my <a href='https://blog.thibaultjanbeyer.com/' class='metalink about-text__link'><i class='fas fa-rss-square'></i> blog</a> for case studies and more details on my work. You can also write me an email via <a href='mailto:thibault.beyer@gmail.com' class='metalink about-text__link'><i class='fas fa-envelope'></i> thibault.beyer@gmail.com</a>"
     ]
   }
