@@ -13,10 +13,9 @@
   bottom: 0;
   opacity: 0.8;
   filter: grayscale(100%);
-  transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out, filter 500ms ease-in-out;
 }
 
-// Link's next sibling is .cards__icons, icon is inside that
 .cards__link--neoforge:hover + .cards__icons--neoforge .cards__icon--neoforge,
 .cards__link--neoforge:focus + .cards__icons--neoforge .cards__icon--neoforge,
 .cards__link--neoforge:active + .cards__icons--neoforge .cards__icon--neoforge {

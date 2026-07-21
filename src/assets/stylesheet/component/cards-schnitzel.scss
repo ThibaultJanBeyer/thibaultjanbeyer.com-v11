@@ -56,6 +56,8 @@
 
 .cards__icon--schnitzel:nth-child(7) {
   bottom: 0;
+  filter: grayscale(100%);
+  transition: filter 500ms ease-in-out;
 
   @include media("<=medium") {
     top: auto;
@@ -63,4 +65,14 @@
     height: auto;
     object-fit: fill;
   }
+
+  &:hover {
+    filter: grayscale(0%);
+  }
+}
+
+.cards__link--schnitzel:hover + .cards__icons--schnitzel .cards__icon--schnitzel:nth-child(7),
+.cards__link--schnitzel:focus + .cards__icons--schnitzel .cards__icon--schnitzel:nth-child(7),
+.cards__link--schnitzel:active + .cards__icons--schnitzel .cards__icon--schnitzel:nth-child(7) {
+  filter: grayscale(0%);
 }
