@@ -79,6 +79,12 @@
         "description": "As an avid body builder myself, I built the probably cutest AI-APP to help track food and stay motivated.",
         "href": "https://neoforge.app/",
         "side": "half",
+        "stars": {
+          "amount": "1K+",
+          "icon-class": "fa-solid fa-download",
+          "id": "neoforge-downloads",
+          "description": "amount of downloads for the app"
+        },
         "background": {
           "src": "assets/img/neoforge-mock.png",
           "alt": "neoforge mockup"
