@@ -1,0 +1,66 @@
+.cards__background--schnitzel {
+  opacity: 1;
+  filter: brightness(.2);
+}
+
+.cards__container--schnitzel {
+  transform: translateY(-20%);
+}
+
+.cards--schnitzel {
+  @include media(">=medium") {
+    padding-bottom: 55%;
+  }
+}
+
+.cards__container--schnitzel {
+  max-width: 400px;
+}
+
+.cards__icon--schnitzel {
+  width: 100%;
+  bottom: -25%;
+
+  // Mobile card is 1:1 (vs 2:1 desktop); bottom-anchored 4:3 overlays sit too low
+  @include media("<=medium") {
+    top: 0;
+    bottom: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+.cards__icon--schnitzel:nth-child(1) {
+  transform: translateX(10%);
+}
+.cards__icon--schnitzel:nth-child(2) {
+  transform: translateX(5%);
+}
+.cards__icon--schnitzel:nth-child(3) {
+  transform: translateX(-5%);
+}
+
+.cards__icon--schnitzel:nth-child(4) {
+  transform: translateX(5%);
+}
+
+.cards__icon--schnitzel:nth-child(5) {
+  transform: translateX(-5%);
+}
+
+.cards__icon--schnitzel:nth-child(6) {
+  transform: translateX(-10%);
+}
+
+.cards__icon--schnitzel:nth-child(7) {
+  bottom: 0;
+
+  @include media("<=medium") {
+    top: auto;
+    bottom: 0;
+    height: auto;
+    object-fit: fill;
+  }
+}

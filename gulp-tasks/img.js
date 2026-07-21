@@ -1,5 +1,6 @@
 var gulp = require("gulp");
 var imagemin = require("gulp-imagemin");
+var merge = require("merge-stream");
 var size = require("gulp-size");
 
 var imgSrc = "./src/assets/img/**/*",
@@ -16,5 +17,5 @@ module.exports = function() {
 
   const task2 = gulp.src(imgCopy).pipe(gulp.dest(imgCopyDst));
 
-  return Promise.all([task1, task2]);
+  return merge(task1, task2);
 };

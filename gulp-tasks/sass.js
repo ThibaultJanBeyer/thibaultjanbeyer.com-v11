@@ -1,5 +1,6 @@
 var gulp = require("gulp");
-var sass = require("gulp-sass");
+var dartSass = require("sass");
+var gulpSass = require("gulp-sass");
 var gulpStylelint = require("gulp-stylelint");
 var plumber = require("gulp-plumber");
 var autoprefixer = require("gulp-autoprefixer");
@@ -7,11 +8,18 @@ var csso = require("gulp-csso");
 var concat = require("gulp-concat");
 var size = require("gulp-size");
 
+var sass = gulpSass(dartSass);
+
 var scssSrc = "./src/assets/stylesheet/bundle.scss",
   scssDst = "./docs/assets/stylesheet/";
 
 var sassOptions = {
-  errLogToConsole: true
+  silenceDeprecations: [
+    "legacy-js-api",
+    "import",
+    "global-builtin",
+    "if-function"
+  ]
 };
 
 module.exports = function() {

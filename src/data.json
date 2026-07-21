@@ -49,11 +49,49 @@
     "description": "Work I do in my free time for fun",
     "title": "Projects.",
     "all": {
+      "schnitzel": {
+        "title": "Schnitzel",
+        "description": "While traveling the world, I designed and released a physical pocked sized, addictive and fast paced card game for 2-8 players, give it a try!",
+        "href": "https://playschnitzel.com/",
+        "side": "full",
+        "stars": {
+          "amount": "500",
+          "icon-class": "fa-solid fa-box",
+          "id": "schnitzel-prints",
+          "description": "copies of the game printed"
+        },
+        "background": {
+          "src": "assets/img/schnitzel-bg2.jpg",
+          "alt": "Schnitzel background"
+        },
+        "icons": [
+          "assets/img/schnitzel-bg-1.png",
+          "assets/img/schnitzel-bg-2.png",
+          "assets/img/schnitzel-bg-3.png",
+          "assets/img/schnitzel-bg-4.png",
+          "assets/img/schnitzel-bg-5.png",
+          "assets/img/schnitzel-bg-6.png",
+          "assets/img/schnitzel-11.png"
+        ]
+      },
+      "neoforge": {
+        "title": "neoforge",
+        "description": "As an avid body builder myself, I built the probably cutest AI-APP to help track food and stay motivated.",
+        "href": "https://neoforge.app/",
+        "side": "half",
+        "background": {
+          "src": "assets/img/neoforge-mock.png",
+          "alt": "neoforge mockup"
+        },
+        "icons": [
+          "assets/img/neoforge.png"
+        ]
+      },
       "architecture": {
         "title": "Architecture Decision Studio",
         "description": "A framework for teams to drive fast, actionable and collaborative decisions",
         "href": "https://engineering.klarna.com/architecture-decision-studio-4627aa6aa6fb",
-        "side": "full",
+        "side": "half",
         "stars": {
           "amount": "102",
           "icon-class": "fa-solid fa-hands-clapping",
@@ -62,7 +100,7 @@
         },
         "background": {
           "src": "assets/img/architecture-decision.png",
-          "alt": "Blogging about the web & fun stuff"
+          "alt": "Architecture decision studio"
         }
       },
       "accessibility": {
@@ -129,10 +167,24 @@
     "description": "Work I do for money",
     "title": "Works.",
     "all": {
+      "arabesque": {
+        "title": false,
+        "description": "Building a state of the art, AI multi-agent powered, investment portfolio management app.",
+        "side": "half",
+        "href": "https://autocio.com/",
+        "img": {
+          "src": "assets/img/autocio.svg",
+          "alt": "AutoCIO"
+        },
+        "background": {
+          "src": "assets/img/autocio-mockup.png",
+          "alt": "AutoCIO App Screenshot"
+        }
+      },
       "klarna": {
         "title": false,
-        "description": "Build up a highly efficient team to create an internal marketing tool from the ground up.",
-        "side": "full",
+        "description": "Build up and managed 3 highly efficient teams working on internal marketing tools from the ground up.",
+        "side": "half",
         "href": "https://klarna.com/",
         "img": {
           "src": "assets/img/klarna-pink.png",
@@ -209,10 +261,10 @@
       "alt": "Thibault Jan Beyer visiting Kimchi Princess Restaurant in Berlin"
     },
     "text": [
-      "People I work with nowadays call me an Engineering Manager. At the age of 11 I’ve build my first website, since then, I’ve never stopped coding. Around 10 years ago I turned my passion into a profession. Since then, I’ve build dozens of single page apps. It’s fair to say that I’m an expert for rich internet applications.",
-      "I’ve worked for various companies, some huge, some small. Currently, I am employed at Klarna Bank AB. In past, I’ve worked for 1&1 IONOS PRO Cloud GmbH, BMW, Hi-Res, APT, Neomatcha, Outdoorgym, Rubbeldiekatz, Vorablesen, edenspiekermann_, and more. I like building things, whether that is building great teams, software, systems, products, games, bunk beds, trust, design, architecture or sand castles, count me in! Now mentoring and enabling others to reach new heights.",
+      "People I work with nowadays call me an Engineering Director. At the age of 11 I’ve build my first website, since then, I’ve never stopped coding. Around 15 years ago I turned my passion into a profession. Since then, I’ve build dozens of single page apps. It’s fair to say that I’m an expert for rich internet applications.",
+      "I’ve worked for various companies, some huge, some small. Currently, I am employed at Arabesque. In past, I’ve worked for Klarna Bank AB, 1&1 IONOS PRO Cloud GmbH, BMW, Hi-Res, APT, Neomatcha, Outdoorgym, Rubbeldiekatz, Vorablesen, edenspiekermann_, and more. I like building things, whether that is building great teams, software, systems, products, games, bunk beds, trust, design, architecture or sand castles, count me in! Now mentoring and enabling others to reach new heights.",
       "For me, it’s much more than just another job. In my spare time, if I’m not traveling or playing, I’m contributing and writing open source projects and tools for which I was fortunate enough to win some awards and recognition.",
-      "You can find details on my career path at <a href='https://www.linkedin.com/in/thibault-jan-beyer-96997a72/' class='metalink about-text__link'><i class='fab fa-linkedin'></i> linkedin</a>, browse through my open source projects on <a href='http://github.com/thibaultjanbeyer/' class='metalink about-text__link'><i class='fab fa-github'></i> github</a>, hear me <a href='https://twitter.com/ThibaultBeyer/' class='metalink about-text__link'><i class='fab fa-twitter'></i> tweet</a> and checkout my <a href='https://blog.thibaultjanbeyer.com/' class='metalink about-text__link'><i class='fas fa-rss-square'></i> blog</a> for case studies and more details on my work. You can also write me an email via <a href='mailto:thibault.beyer@gmail.com' class='metalink about-text__link'><i class='fas fa-envelope'></i> thibault.beyer@gmail.com</a>"
+      "You can find details on my career path at <a href='https://www.linkedin.com/in/thibault-jan-beyer-96997a72/' class='metalink about-text__link'><i class='fab fa-linkedin'></i> linkedin</a>, browse through my open source projects on <a href='http://github.com/thibaultjanbeyer/' class='metalink about-text__link'><i class='fab fa-github'></i> github</a>, and checkout my <a href='https://blog.thibaultjanbeyer.com/' class='metalink about-text__link'><i class='fas fa-rss-square'></i> blog</a> for case studies and more details on my work. You can also write me an email via <a href='mailto:thibault.beyer@gmail.com' class='metalink about-text__link'><i class='fas fa-envelope'></i> thibault.beyer@gmail.com</a>"
     ]
   }
 }

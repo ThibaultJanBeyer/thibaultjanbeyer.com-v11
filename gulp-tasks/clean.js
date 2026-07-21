@@ -1,10 +1,6 @@
-var gulp = require('gulp');
-var clean = require('gulp-clean');
+var del = require("del");
 
-var jsDst = './docs/';
-    
-module.exports = function () {
-  console.log('~~~~~~~~~~~ Your room is now clean, Master :-) ~~~~~~~~~');
-  return gulp.src(jsDst, {read: false})
-        .pipe(clean({force: true}));
+module.exports = function() {
+  console.log("~~~~~~~~~~~ Your room is now clean, Master :-) ~~~~~~~~~");
+  return del(["./docs/**", "./docs"], { force: true });
 };

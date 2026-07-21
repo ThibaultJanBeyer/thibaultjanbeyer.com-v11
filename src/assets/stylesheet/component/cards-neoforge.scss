@@ -1,0 +1,23 @@
+.cards__link--neoforge:active .cards__background--neoforge,
+.cards__link--neoforge:active+.cards__background--neoforge,
+.cards__link--neoforge:focus .cards__background--neoforge,
+.cards__link--neoforge:focus+.cards__background--neoforge,
+.cards__link--neoforge:hover .cards__background--neoforge,
+.cards__link--neoforge:hover+.cards__background--neoforge {
+  transform: scale(1.3);
+}
+
+.cards__icon--neoforge {
+  width: 20%;
+  left: 0;
+  bottom: 0;
+  opacity: 0.75;
+  transition: opacity 500ms ease-in-out;
+}
+
+// Link's next sibling is .cards__icons, icon is inside that
+.cards__link--neoforge:hover + .cards__icons--neoforge .cards__icon--neoforge,
+.cards__link--neoforge:focus + .cards__icons--neoforge .cards__icon--neoforge,
+.cards__link--neoforge:active + .cards__icons--neoforge .cards__icon--neoforge {
+  opacity: 1;
+}
