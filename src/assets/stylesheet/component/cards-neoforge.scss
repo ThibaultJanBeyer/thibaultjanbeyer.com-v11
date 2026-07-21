@@ -11,7 +11,8 @@
   width: 20%;
   left: 0;
   bottom: 0;
-  opacity: 0.75;
+  opacity: 0.8;
+  filter: grayscale(100%);
   transition: opacity 500ms ease-in-out;
 }
 
@@ -20,4 +21,5 @@
 .cards__link--neoforge:focus + .cards__icons--neoforge .cards__icon--neoforge,
 .cards__link--neoforge:active + .cards__icons--neoforge .cards__icon--neoforge {
   opacity: 1;
+  filter: grayscale(0%);
 }
