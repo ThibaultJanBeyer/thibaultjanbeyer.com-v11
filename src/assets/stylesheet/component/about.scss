@@ -24,6 +24,16 @@
   }
 }
 
+.about-text__inline-link {
+  color: whitesmoke;
+  font-style: italic;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .about-text__link {
   white-space: nowrap;
 }
