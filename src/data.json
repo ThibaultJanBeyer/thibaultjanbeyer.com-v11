@@ -19,7 +19,7 @@
     "info": {
       "top": "Hi, I’m",
       "name": "Thibault Jan Beyer",
-      "text": "Your ambitious award winning full-stack engineer from Belgium. Currently living, learning, working and playing in Bonn, Germany."
+      "text": "Your ambitious award winning full-stack engineer from Belgium. Currently living, learning, working and playing in Chiang Mai, Thailand."
     },
     "links": [
       {
@@ -264,7 +264,8 @@
     "title": "About.",
     "image": {
       "src": "assets/img/thibault-jan-beyer_raspberries.jpg",
-      "alt": "Thibault Jan Beyer cultivating Raspberry in Chiang Mai, Thailand"
+      "alt": "Thibault Jan Beyer cultivating Raspberry in Chiang Mai, Thailand",
+      "caption": "码农"
     },
     "text": [
       "People I work with nowadays call me an Engineering Director. At the age of 11 I’ve build my first website, since then, I’ve never stopped coding. Around 15 years ago I turned my passion into a profession. Since then, I’ve build dozens of apps. It’s fair to say that I’m an expert of rich internet applications.",
